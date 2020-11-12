@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat.ttf') format('truetype');
+}
+
+
+body {
+    font-family: "Montserrat";
+}
+
+/* jumbotron */
+.jumbotron {
+    background-image: url('../img/banner/leaf8.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+    color: rgb(236, 247, 255);
+    overflow: hidden;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .container {
+    padding: 150px 0;
+}
+
+
+.jAtas,
+.jBawah {
+    opacity: 0;
+    transform: translate(0, -100px);
+    text-shadow: 1px 1px 10px rgba(18, 18, 19, 0.5);
+    transition: 2s;
+}
+
+
+.jBawah {
+    transform: translate(0, 350px);
+}
+
+.jAtas.jMuncul,
+.jBawah.jMuncul {
+    opacity: 1;
+    transform: translate(0, 40px);
+    text-shadow: 1px 1px 10px rgba(27, 27, 27, 0.5);
+}
+
+/* About */
+
+.about {
+    margin: 400px 0;
+}
+
+.about img {
+    margin: 20px 0;
+    width: 130px;
+    box-shadow: 14px 1px 10px rgba(18, 18, 19, 0.5);
+}
+
+.card-panel h6 {
+    padding-bottom: 20px;
+}
+
+.card-panel p {
+    margin-top: -2px;
+}
+
+/* passion */
+.passion .material-icons {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 1s;
+}
+
+.passion .material-icons.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.passion h4 {
+    padding: 40px 0;
+}
+
+.passion h6 {
+    padding: 30px;
+    font-weight: bold;
+}
+
+.passion i {
+    padding: 60px;
+    color: gainsboro;
+}
+
+/* experience */
+.experience {
+    margin: 400px 0 50px;
+}
+
+.experience img {
+    width: 90px;
+    padding: 25px;
+    filter: grayscale(1) drop-shadow(1px 1px 1px rgba(88, 88, 88, 0.8));
+}
+
+.experience img:hover {
+    filter: grayscale(0) drop-shadow(0px 0px 5px rgba(249, 252, 252, 0.9));
+}
+
+.parallax-container {
+    height: 200px;
+    text-shadow: 1px 1px 2px rgba(18, 18, 19, 0.8);
+}
+
+.parallax img {
+    filter: grayscale(0.6);
+    opacity: 0.5 !important;
+}
+
+.resume a {
+    margin: 30px 0;
+    border: 1px solid #999;
+}
+
+/* Work */
+.work {
+    margin: 400px 0;
+}
+
+.work h4 {
+    margin: 60Px 0;
+}
+
+.work a {
+    margin-top: 30px;
+}
+
+.work .materialboxed {
+    margin-top: -15px;
+}
+
+.work .port {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 1s;
+
+}
+
+.work .port.timbul {
+    opacity: 1;
+    transform: translate(0, 0);
+
+}
+
+
+
+/* Contact */
+.contact h4 {
+    padding: 30px 0;
+}
+
+.collection-header {
+    font-size: 1.8em;
+    padding: 15px 0;
+}
+
+.contact form {
+    text-align: left;
+}
+
+/* footer */
+.footer {
+    padding-top: 10px;
+}
+
+.footer img {
+    width: 40px;
+    padding: 3px;
+}
