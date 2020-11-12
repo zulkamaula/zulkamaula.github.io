@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZRM-Hz! : Merch Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+
+            <div class="hero">
+                <h2 class="heading">ZRM-Hz! Merch</h2>
+                <p class="sub-heading">Hoodie & T-Shirt</p>
+            </div>
+
+            <div class="features feature-1">
+                <h4 class="price">IDR 150K</h4>
+                <P class="item">T-shirt</P>
+            </div>
+
+            <div class="features feature-2">
+                <h4 class="price">IDR 250K</h4>
+                <P class="item">Hoodie</P>
+            </div>
+
+        </header>
+
+        <nav class="menu">
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="brand">
+                <h1>ZRM-Hz!</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <h2>Services!</h2>
+
+            <div class="service">
+                <div class="icon">&phone;</div>
+                <h3>24-Hous</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dignissimos.</p>
+            </div>
+
+            <div class="service">
+                <div class="icon">&oS;</div>
+                <h3>Custom</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dignissimos.</p>
+            </div>
+
+            <div class="service">
+                <div class="icon">&odsold;</div>
+                <h3>Cashback</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dignissimos.</p>
+            </div>
+
+            <div class="service">
+                <div class="icon">&mscr;</div>
+                <h3>Merchendise</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dignissimos.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery!</h2>
+            <img src="img/img-gallery/p1.jpg" alt="">
+            <img src="img/img-gallery/p2.jpg" alt="">
+            <img src="img/img-gallery/p3.jpg" alt="">
+            <img src="img/img-gallery/p7.jpg" alt="">
+            <img src="img/img-gallery/p8.jpg" alt="">
+            <img src="img/img-gallery/p9.jpg" alt="">
+            <img src="img/img-gallery/p10.jpg" alt="">
+            <img src="img/img-gallery/p11.jpg" alt="">
+            <img src="img/img-gallery/p12.jpg" alt="">
+        </section>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <h4>&copy; 2020 ZRM-Hz! - All rights reserved. </h4>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+
+</html>
